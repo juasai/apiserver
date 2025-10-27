@@ -114,8 +114,8 @@ class CartManager {
 const productRouter = express.Router();
 const cartRouter = express.Router();
 
-const productManager = new ProductManager('./products.json');
-const cartManager = new CartManager('./carts.json');
+const productManager = new ProductManager('./data/products.json');
+const cartManager = new CartManager('./data/carts.json');
 
 // Middleware
 app.use(express.json());
