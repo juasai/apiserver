@@ -6,27 +6,12 @@ GET http://localhost:8080/api/products
 ### Get a product by ID
 GET http://localhost:8080/api/products/1
 
-## Add a new product
-#POST http://localhost:8080/api/products
-#Content-Type: application/json
-#
-#{
-#  "title": "New Product",
-#  "description": "Description of the new product",
-#  "code": "NP001",
-#  "price": 100,
-#  "status": true,
-#  "stock": 50,
-#  "category": "Category1",
-#  "thumbnails": ["/images/product1.png"]
-#}
-
 ### Add a new product
 POST http://localhost:8080/api/products
 Content-Type: application/json
 
 {
-  "title": "cepillo",
+  "title": "cepillo2",
   "description": "Cepillo para el cabello",
   "code": "NP001",
   "price": 1250,
@@ -35,15 +20,6 @@ Content-Type: application/json
   "category": "accesorios",
   "thumbnails": ["/images/product1.png"]
 }
-
-## Update a product by ID
-#PUT http://localhost:8080/api/products/1
-#Content-Type: application/json
-#
-#{
-#  "title": "Updated Product",
-#  "price": 150
-#}
 
 ### Update a product by ID
 PUT http://localhost:8080/api/products/1
